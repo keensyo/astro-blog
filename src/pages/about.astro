@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
 
+import Navigation from '../components/Navigation.astro'
+
 const pageTitle = "このサイトについて"
 
 const skillColor = "navy"
@@ -26,9 +28,7 @@ const fontWeight = "bold"
     </style>
 	</head>
 	<body>
-    <a href="/">トップ</a>
-    <a href="/about">{pageTitle}</a>
-    <a href="/blog">記事</a>
+    <Navigation />
 
     <h1>Aboutページです</h1>
     <p class="para">特に何も書くことが無い</p>
