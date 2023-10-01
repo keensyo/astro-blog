@@ -1,5 +1,8 @@
 ---
+const pageTitle = "このサイトについて"
 
+const skillColor = "navy"
+const fontWeight = "bold"
 ---
 
 <html lang="ja">
@@ -8,14 +11,24 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Blog</title>
+		<title>{pageTitle}</title>
+    <style define:vars={{skillColor, fontWeight}}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+      .para {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+      }
+    </style>
 	</head>
 	<body>
     <a href="/">トップ</a>
-    <a href="/about">このサイトについて</a>
+    <a href="/about">{pageTitle}</a>
     <a href="/blog">記事</a>
 
     <h1>Aboutページです</h1>
-    <p>特に何も書くことが無い</p>
+    <p class="para">特に何も書くことが無い</p>
 	</body>
 </html>
