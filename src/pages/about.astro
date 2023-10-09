@@ -1,41 +1,7 @@
 ---
-import '../styles/global.css'
-
-import Footer from '../components/Footer.astro'
-import Header from '../components/Header.astro'
-
-const pageTitle = "このサイトについて"
-
-const skillColor = "navy"
-const fontWeight = "bold"
+import BaseLayout from '../layouts/BaseLayout.astro'
+const pageTitle = "About"
 ---
-
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-    <style define:vars={{skillColor, fontWeight}}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .para {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-      }
-    </style>
-	</head>
-	<body>
-    <Header />
-
-    <h1>Aboutページです</h1>
-    <p class="para">特に何も書くことが無い</p>
-    <Footer />
-    <script>
-      import '../scripts/menu.js'
-    </script>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <p>経歴とか書く</p>
+</BaseLayout>
