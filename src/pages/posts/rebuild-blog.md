@@ -6,7 +6,7 @@ description: 'Gatsby→Astro'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro", "blogging", "TIL"]
 ---
 ## ブログの式年遷宮がしたい
 これまではGatsbyで構築していたが、Gatsbyのバージョンアップ対応が面倒になってしまった。</br>
